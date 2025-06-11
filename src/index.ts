@@ -9,7 +9,7 @@ const app: Application = express();
 app.use(express.json());
 
 app.use("/api", productsRouter );
-app.use("/api", authRouter );
+app.use("/api/auth", authRouter );
 
 app.listen(PORT, () => {
     console.log(`El servidor está corriendo en el puerto ${PORT}`);
