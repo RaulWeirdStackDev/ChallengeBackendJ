@@ -92,3 +92,31 @@ export const getUsersController = async (req: Request, res: Response) => {
     }
   }
 };
+
+export const getUsersByIdController = async (req: Request, res: Response) => {
+  const { id } = req.params;
+
+  if (!id || isNaN(Number(id))) {
+    res.status(400).json({ error: "ID inválido" });
+    return;
+  }
+
+  try {
+    const user = await prisma.usuarios.findUnique({
+      where: { id: Number(id) },
+    });
+
+    if (!user) {
+      res.status(404).json({ error: "Usuario no encontrado" });
+      return;
+    }
+
+    res.status(200).json(user);
+  } catch (error) {
+    if (error instanceof Error) {
+      res.status(500).json({ error: error.message });
+    } else {
+      res.status(500).json({ error: "Error desconocido" });
+    }
+  }
+};

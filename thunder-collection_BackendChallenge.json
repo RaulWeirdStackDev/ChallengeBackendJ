@@ -1,0 +1,179 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "BackendChallenge",
+    "collectionId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+    "dateExported": "2025-06-11T01:39:37.719Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "9c99d9f6-1b93-420a-8e4e-4ba0d825045f",
+            "name": "auth",
+            "containerId": "",
+            "created": "2025-06-10T00:56:16.408Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "432e3d40-8df5-463c-ac1f-c202dd6632b2",
+            "name": "productos",
+            "containerId": "",
+            "created": "2025-06-11T00:58:32.364Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "56355b93-90bb-45a8-83f0-5acf7bf2b082",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "9c99d9f6-1b93-420a-8e4e-4ba0d825045f",
+            "name": "registrarUsuario",
+            "url": "localhost:3001/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-06-10T00:47:32.496Z",
+            "modified": "2025-06-10T00:51:35.626Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"email\":\"raul@test.com\",\n \"password\":\"1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "51be74a2-dec6-4f8b-aad1-1e48f85bf5a1",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "9c99d9f6-1b93-420a-8e4e-4ba0d825045f",
+            "name": "getUsuarios",
+            "url": "localhost:3001/api/auth/usuarios",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-06-10T00:53:59.396Z",
+            "modified": "2025-06-11T01:37:02.828Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhdWxAdGVzdC5jb20iLCJpYXQiOjE3NDk2MDM3OTQsImV4cCI6MTc0OTYwNzM5NH0.l0tMRF9ZN1BV3UcV48STZzsLi1vcA8mjlEMepGI_qrc"
+                }
+            ]
+        },
+        {
+            "_id": "b666e875-8228-4320-ae8b-f2d435b1d5aa",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "9c99d9f6-1b93-420a-8e4e-4ba0d825045f",
+            "name": "loginUsuario",
+            "url": "localhost:3001/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-06-10T01:01:30.563Z",
+            "modified": "2025-06-10T01:07:07.922Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"raul@test.com\",\n  \"password\":\"1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "08c9892e-f5e6-462f-bf72-2237cee5960e",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "432e3d40-8df5-463c-ac1f-c202dd6632b2",
+            "name": "getProductos",
+            "url": "localhost:3001/api/products/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-06-11T01:00:50.618Z",
+            "modified": "2025-06-11T01:01:05.067Z",
+            "headers": []
+        },
+        {
+            "_id": "6f6ebb7f-8856-45a9-80d0-f6960b5e2067",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "432e3d40-8df5-463c-ac1f-c202dd6632b2",
+            "name": "getProductosID",
+            "url": "localhost:3001/api/products/1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-06-11T01:01:19.159Z",
+            "modified": "2025-06-11T01:01:31.705Z",
+            "headers": []
+        },
+        {
+            "_id": "64a5d394-7584-4078-855c-a5e098d31352",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "432e3d40-8df5-463c-ac1f-c202dd6632b2",
+            "name": "postProducto",
+            "url": "localhost:3001/api/products/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-06-11T01:12:49.546Z",
+            "modified": "2025-06-11T01:14:46.345Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhdWxAdGVzdC5jb20iLCJpYXQiOjE3NDk2MDM3OTQsImV4cCI6MTc0OTYwNzM5NH0.l0tMRF9ZN1BV3UcV48STZzsLi1vcA8mjlEMepGI_qrc"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"nombre\": \"Headset con micrófono\",\n    \"descripcion\": \"equipo de audio y sonido para jugar en línea\",\n    \"precio\": 35000,\n    \"stock\": 25\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "920e463e-a69f-48a3-8ff2-0065b2f271d1",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "432e3d40-8df5-463c-ac1f-c202dd6632b2",
+            "name": "putProducto",
+            "url": "localhost:3001/api/products/1",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2025-06-11T01:15:28.301Z",
+            "modified": "2025-06-11T01:17:14.435Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhdWxAdGVzdC5jb20iLCJpYXQiOjE3NDk2MDM3OTQsImV4cCI6MTc0OTYwNzM5NH0.l0tMRF9ZN1BV3UcV48STZzsLi1vcA8mjlEMepGI_qrc"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"nombre\": \"Joystick de videojuegos\",\n    \"descripcion\": \"Control para consolas de videojuegos\",\n    \"precio\": 25709,\n    \"stock\": 20\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "218fd144-c54b-40b6-9168-0ccde89002f3",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "432e3d40-8df5-463c-ac1f-c202dd6632b2",
+            "name": "deleteProductos",
+            "url": "localhost:3001/api/products/2",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2025-06-11T01:17:42.429Z",
+            "modified": "2025-06-11T01:22:52.720Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhdWxAdGVzdC5jb20iLCJpYXQiOjE3NDk2MDM3OTQsImV4cCI6MTc0OTYwNzM5NH0.l0tMRF9ZN1BV3UcV48STZzsLi1vcA8mjlEMepGI_qrc"
+                }
+            ]
+        },
+        {
+            "_id": "46f4e232-2de0-411f-8c0f-edce9876fc06",
+            "colId": "a28226bf-bbf3-4136-aa75-19e6b809eceb",
+            "containerId": "9c99d9f6-1b93-420a-8e4e-4ba0d825045f",
+            "name": "getUsuarioID",
+            "url": "localhost:3001/api/auth/usuarios/1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2025-06-11T01:37:26.285Z",
+            "modified": "2025-06-11T01:37:57.143Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhdWxAdGVzdC5jb20iLCJpYXQiOjE3NDk2MDM3OTQsImV4cCI6MTc0OTYwNzM5NH0.l0tMRF9ZN1BV3UcV48STZzsLi1vcA8mjlEMepGI_qrc"
+                }
+            ]
+        }
+    ],
+    "ref": "wrQN04AL5X6Fu4xr-Cr1ndrbS5spQpxCAtCVgvTyLINkz6qS3cRNXiZiSyDZF0yd1lPTUChopNGjAi4rgdCwHA"
+}
