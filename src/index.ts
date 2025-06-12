@@ -5,7 +5,8 @@ const PORT = process.env.PORT || 3000
 // Solo iniciar el servidor cuando este archivo se ejecute directamente
 if (require.main === module) {
   app.listen(PORT, () => {
-    console.log(`El servidor está corriendo en el puerto ${PORT}`)
+    console.log(`Servidor corriendo en http://localhost:${PORT}`)
+    console.log(`Swagger docs disponibles en http://localhost:${PORT}/api-docs`)
   })
 }
 
