@@ -13,26 +13,47 @@ Este proyecto es una API RESTful construida con TypeScript, Express, PostgreSQL 
 - **Tests** con Jest y Supertest
 
 📁 Estructura general:
+
 src/
+
 │
+
 ├── controllers/
+
 ├── routes/
+
 ├── middlewares/
+
 ├── db/
+
 ├── generated/
+
 ├── app.ts
+
 └── index.ts
+
 │
+
 dist/
+
 │
+
 docs/
+
 └── swaggerOptions.ts
+
 |
+
 prisma/
+
 └── schema.prisma
+
 |
+
 tests/
+
 └── all.tests.ts
+
 
 ## 🚀 Levantar localmente
 
