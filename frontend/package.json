@@ -17,8 +17,10 @@
     "lucide-react": "^0.518.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.58.1",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "zod": "^3.26.0-canary.20250619T152955"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
